@@ -29,5 +29,5 @@ predicate calls(Function caller) {
 }
 
 from Function test
-where isTest(function) and calls(test)
+where isTest(test) and calls(test)
 select test, "calls pressActionKey"
